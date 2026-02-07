@@ -3,6 +3,8 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import Utils.Log;
+
 public class LoginPage {
 	
 	private WebDriver driver;
@@ -19,6 +21,7 @@ public class LoginPage {
 	 
 	
     public void enterUsername(String user) {
+    	
     	driver.findElement(usernameBox).clear();
         driver.findElement(usernameBox).sendKeys(user);
     }
@@ -29,6 +32,7 @@ public class LoginPage {
     }
 
     public void clickLogin() {
+    	
         driver.findElement(loginbutton).click();
     }
 	
