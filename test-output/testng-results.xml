@@ -1,53 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-09T16:58:04 IST" name="Default suite" finished-at="2026-02-09T16:58:12 IST" duration-ms="8684">
+  <suite started-at="2026-02-10T12:37:20 IST" name="Default suite" finished-at="2026-02-10T12:37:35 IST" duration-ms="14389">
     <groups>
     </groups>
-    <test started-at="2026-02-09T16:58:04 IST" name="Default test" finished-at="2026-02-09T16:58:12 IST" duration-ms="8684">
+    <test started-at="2026-02-10T12:37:20 IST" name="Default test" finished-at="2026-02-10T12:37:35 IST" duration-ms="14389">
       <class name="Tests.LoginTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:Tests.LoginTest@d771cc9]" started-at="2026-02-09T16:58:04 IST" name="setupReport" finished-at="2026-02-09T16:58:04 IST" duration-ms="93" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:Tests.LoginTest@3f91b517]" started-at="2026-02-10T12:37:20 IST" name="setupReport" finished-at="2026-02-10T12:37:20 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoginTest@d771cc9]" started-at="2026-02-09T16:58:04 IST" name="setUp" finished-at="2026-02-09T16:58:07 IST" duration-ms="3035" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoginTest@3f91b517]" started-at="2026-02-10T12:37:21 IST" name="setUp" finished-at="2026-02-10T12:37:25 IST" duration-ms="3838" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testlogin()[pri:0, instance:Tests.LoginTest@d771cc9]" started-at="2026-02-09T16:58:07 IST" name="testlogin" finished-at="2026-02-09T16:58:08 IST" duration-ms="1711" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testlogin -->
-        <test-method is-config="true" signature="down(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@d771cc9]" started-at="2026-02-09T16:58:08 IST" name="down" finished-at="2026-02-09T16:58:08 IST" duration-ms="95" status="PASS">
+        <test-method signature="testlogin(java.lang.String,java.lang.String)[pri:0, instance:Tests.LoginTest@3f91b517]" started-at="2026-02-10T12:37:25 IST" name="testlogin" data-provider="LoginData" finished-at="2026-02-10T12:37:25 IST" duration-ms="962" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testlogin status=SUCCESS method=LoginTest.testlogin()[pri:0, instance:Tests.LoginTest@d771cc9] output={null}]]]>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- down -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoginTest@d771cc9]" started-at="2026-02-09T16:58:08 IST" name="setUp" finished-at="2026-02-09T16:58:11 IST" duration-ms="2540" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testloginInvalid()[pri:0, instance:Tests.LoginTest@d771cc9]" started-at="2026-02-09T16:58:11 IST" name="testloginInvalid" finished-at="2026-02-09T16:58:12 IST" duration-ms="728" status="FAIL">
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [nopCommerce demo store.] but found [nopCommerce demo store. Login]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Logout"}
+  (Session info: chrome=144.0.7559.111)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b45452018deb6d66021feff5900a7688, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.111, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/ht/6z0j72592vs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62113}, goog:processID: 48001, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62113/devtoo..., se:cdpVersion: 144.0.7559.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b45452018deb6d66021feff5900a7688]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [nopCommerce demo store.] but found [nopCommerce demo store. Login]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at Tests.LoginTest.testloginInvalid(LoginTest.java:66)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Logout"}
+  (Session info: chrome=144.0.7559.111)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b45452018deb6d66021feff5900a7688, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.111, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/ht/6z0j72592vs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62113}, goog:processID: 48001, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62113/devtoo..., se:cdpVersion: 144.0.7559.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b45452018deb6d66021feff5900a7688
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+at Pages.LoginPage.isLogoutVisible(LoginPage.java:67)
+at Tests.LoginTest.testlogin(LoginTest.java:67)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -76,22 +94,218 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testloginInvalid -->
-        <test-method is-config="true" signature="down(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@d771cc9]" started-at="2026-02-09T16:58:12 IST" name="down" finished-at="2026-02-09T16:58:12 IST" duration-ms="557" status="PASS">
+        </test-method> <!-- testlogin -->
+        <test-method is-config="true" signature="down(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@3f91b517]" started-at="2026-02-10T12:37:25 IST" name="down" finished-at="2026-02-10T12:37:26 IST" duration-ms="221" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testloginInvalid status=FAILURE method=LoginTest.testloginInvalid()[pri:0, instance:Tests.LoginTest@d771cc9] output={null}]]]>
+                <![CDATA[[TestResult name=testlogin status=FAILURE method=LoginTest.testlogin(java.lang.String,java.lang.String)[pri:0, instance:Tests.LoginTest@3f91b517] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- down -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:Tests.LoginTest@d771cc9]" started-at="2026-02-09T16:58:12 IST" name="tearDownReport" finished-at="2026-02-09T16:58:12 IST" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoginTest@3f91b517]" started-at="2026-02-10T12:37:26 IST" name="setUp" finished-at="2026-02-10T12:37:29 IST" duration-ms="3301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testlogin(java.lang.String,java.lang.String)[pri:0, instance:Tests.LoginTest@3f91b517]" started-at="2026-02-10T12:37:29 IST" name="testlogin" data-provider="LoginData" finished-at="2026-02-10T12:37:29 IST" duration-ms="230" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Logout"}
+  (Session info: chrome=144.0.7559.111)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47885bda6b519b2c175820f25d34dc0e, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.111, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/ht/6z0j72592vs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62133}, goog:processID: 48028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62133/devtoo..., se:cdpVersion: 144.0.7559.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 47885bda6b519b2c175820f25d34dc0e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Logout"}
+  (Session info: chrome=144.0.7559.111)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47885bda6b519b2c175820f25d34dc0e, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.111, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/ht/6z0j72592vs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62133}, goog:processID: 48028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62133/devtoo..., se:cdpVersion: 144.0.7559.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 47885bda6b519b2c175820f25d34dc0e
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+at Pages.LoginPage.isLogoutVisible(LoginPage.java:67)
+at Tests.LoginTest.testlogin(LoginTest.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogin -->
+        <test-method is-config="true" signature="down(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@3f91b517]" started-at="2026-02-10T12:37:29 IST" name="down" finished-at="2026-02-10T12:37:30 IST" duration-ms="837" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testlogin status=FAILURE method=LoginTest.testlogin(java.lang.String,java.lang.String)[pri:0, instance:Tests.LoginTest@3f91b517] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- down -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoginTest@3f91b517]" started-at="2026-02-10T12:37:30 IST" name="setUp" finished-at="2026-02-10T12:37:33 IST" duration-ms="2773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testlogin(java.lang.String,java.lang.String)[pri:0, instance:Tests.LoginTest@3f91b517]" started-at="2026-02-10T12:37:33 IST" name="testlogin" data-provider="LoginData" finished-at="2026-02-10T12:37:35 IST" duration-ms="1712" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@yourstore.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Logout"}
+  (Session info: chrome=144.0.7559.111)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [420ab5c150808f96ba1dd3c4675fdf37, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.111, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/ht/6z0j72592vs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62155}, goog:processID: 48050, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62155/devtoo..., se:cdpVersion: 144.0.7559.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 420ab5c150808f96ba1dd3c4675fdf37]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Logout"}
+  (Session info: chrome=144.0.7559.111)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [420ab5c150808f96ba1dd3c4675fdf37, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.111, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/ht/6z0j72592vs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62155}, goog:processID: 48050, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62155/devtoo..., se:cdpVersion: 144.0.7559.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 420ab5c150808f96ba1dd3c4675fdf37
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+at Pages.LoginPage.isLogoutVisible(LoginPage.java:67)
+at Tests.LoginTest.testlogin(LoginTest.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogin -->
+        <test-method is-config="true" signature="down(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@3f91b517]" started-at="2026-02-10T12:37:35 IST" name="down" finished-at="2026-02-10T12:37:35 IST" duration-ms="239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testlogin status=FAILURE method=LoginTest.testlogin(java.lang.String,java.lang.String)[pri:0, instance:Tests.LoginTest@3f91b517] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- down -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:Tests.LoginTest@3f91b517]" started-at="2026-02-10T12:37:35 IST" name="tearDownReport" finished-at="2026-02-10T12:37:35 IST" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
